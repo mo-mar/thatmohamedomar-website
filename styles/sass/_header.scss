@@ -1,0 +1,25 @@
+header i{
+    // background: tomato;
+    border-radius: 50%;
+    padding: 5px;
+    border: 2px solid;
+}
+
+h1{
+    font-family: $main-font;
+    font-weight: 700;
+}
+
+h2{
+    font-family: $sub-font;
+    font-weight: 400;
+}
+
+.profile-picture{
+    width: 100%;
+    img{
+        border-radius: 50%;
+        width: 50%;
+        border: 5px solid grey;
+    }
+}
