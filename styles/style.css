@@ -177,34 +177,179 @@ html {
 
 body {
   font-size: 2rem;
+  color: black;
 }
 
 a {
   text-decoration: none;
 }
 
+h1, h2, h3, h4 {
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.85))), url("../images/hero-background.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.85)), url("../images/hero-background.jpg");
+  height: 85vh;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
 header i {
   border-radius: 50%;
   padding: 5px;
   border: 2px solid;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 5px;
 }
 
 h1 {
   font-family: "Open Sans", sans-serif;
+  font-size: 5.5rem;
   font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  margin: 0 0 15px 0;
 }
 
-h2 {
+header h2 {
   font-family: "Raleway", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  margin: 0 0 25px 0;
+}
+
+.hero-center-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 120px;
 }
 
 .profile-picture {
-  width: 100%;
+  width: 25%;
 }
 
 .profile-picture img {
   border-radius: 50%;
+  width: 100%;
+  border: 10px solid whitesmoke;
+}
+
+.header-icon-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  margin: 0 0 80px 0;
+  padding: 0 0 25px 0;
+}
+
+.header-icon-list li {
+  margin: 0 10px;
+}
+
+.about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 75px;
+}
+
+.about-me h2 {
+  font-size: 4rem;
+}
+
+.about-me p {
   width: 50%;
-  border: 5px solid grey;
+}
+
+.skills {
+  background: #f0f2f7;
+  text-align: center;
+}
+
+.skills-icons {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-icons i {
+  display: block;
+  font-size: 5.8rem;
+  margin-bottom: 15px;
+}
+
+.skills-icons li {
+  margin: 10px 25px;
+}
+
+.skills-icons svg {
+  display: block;
+}
+
+.skill-icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skill-icon-container p {
+  margin: 0;
 }
