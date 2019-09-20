@@ -254,6 +254,8 @@ header h2 {
 
 .profile-picture {
   width: 25%;
+  -webkit-animation: slide-in-right 1s forwards;
+          animation: slide-in-right 1s forwards;
 }
 
 .profile-picture img {
@@ -273,6 +275,32 @@ header h2 {
 
 .header-icon-list li {
   margin: 0 10px;
+}
+
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .about-me {
@@ -303,6 +331,8 @@ header h2 {
 .skills {
   background: #f0f2f7;
   text-align: center;
+  padding-top: 25px;
+  margin-top: 50px;
 }
 
 .skills-icons {
@@ -332,6 +362,8 @@ header h2 {
 
 .skills-icons svg {
   display: block;
+  font-size: 5.8rem;
+  margin-bottom: 15px;
 }
 
 .skill-icon-container {
@@ -351,5 +383,13 @@ header h2 {
 }
 
 .skill-icon-container p {
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+}
+
+footer p {
   margin: 0;
 }

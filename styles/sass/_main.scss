@@ -15,6 +15,8 @@
 .skills{
     background: $section-color1;
     text-align: center;
+    padding-top: 25px;
+    margin-top: 50px;
 }
 
 .skills-icons{
@@ -36,6 +38,8 @@
     }
     svg{
         display: block;
+        font-size: 5.8rem;
+        margin-bottom: 15px;
     }
 }
 
