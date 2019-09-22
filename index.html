@@ -18,7 +18,11 @@
     <header>
         <div class="wrapper">
             <nav>
-                <ul>
+                <label for="hamburger">
+                    <p class="visuallyhidden">Menu Toggle</p>&#9776;
+                </label>
+                <input type="checkbox" class="hamburger-toggle">
+                <ul class="hamburger-menu">
                     <li><a href="#"></a>Home</li>
                     <li><a href="#"></a>About</li>
                     <li><a href="#"></a>Toolbox</li>
@@ -30,9 +34,11 @@
                 <h1>Mohamed Omar</h1>
                 <h2>Front-end developer</h2>
                 <ul class="header-icon-list">
-                    <li><a href="https://twitter.com/ThatMohamedOmar"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/mohamedomar2/"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="https://github.com/mo-mar"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://twitter.com/ThatMohamedOmar" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li><a href="https://www.linkedin.com/in/mohamedomar2/" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://github.com/mo-mar" target="_blank"><i class="fab fa-github"></i></a></li>
                 </ul>
                 <div class="profile-picture">
                     <img src="images/mohamed-omar-headshot.jpg"
@@ -134,34 +140,141 @@
                             <button id="bitter-parent">Bitter Parent</button>
                         </li>
                     </ul>
-                    <div class="under-the-sea-example">
-                        <h3>Under the Sea</h3>
-                        <p>A multi-page PSD conversion.</p>
-                        <ul><p>Built with:</p>
-                            <li><span class="tech-name">HTML 5</span><i class="fab fa-html5"></i></li>
-                            <li><span class="tech-name">CSS3</span><i class="fab fa-css3-alt"></i></li>
-                            <li><span class="tech-name">SASS</span><i class="fab fa-sass"></i></li>
-                        </ul>
-
-                        <div class="recent-work-links">
-                            <a href="https://github.com/mo-mar/mohamed-omar-project-two">Check it out on GitHub</a>
-                            <a href="https://mo-mar.github.io/mohamed-omar-project-two/">View live site</a>
+                </div>
+                <div class="recent-work-master">
+                    <div class="under-the-sea-example recent-work-container">
+                        <div class="recent-work-box">
+                            <h3>Under the Sea</h3>
+                            <p>A multi-page PSD conversion. It's responsive, accessible and has a lot of fish. What
+                                modern
+                                web development is all about.</p>
+                            <div class="screenshot-container">
+                                <a href="https://mo-mar.github.io/mohamed-omar-project-two/" target="_blank"><img
+                                        src="images/under-the-sea-screenshot.jpg"
+                                        alt="A screengrab of a website called Under the Sea, built by Mohamed Omar."></a>
+                            </div>
+                        </div>
+                        <div class="recent-work-info">
+                            <ul>
+                                <li><i class="fab fa-html5"></i></li>
+                                <li><i class="fab fa-css3-alt"></i></li>
+                                <li><i class="fab fa-sass"></i></li>
+                            </ul>
+                            <div class="recent-work-links">
+                                <a href="https://github.com/mo-mar/mohamed-omar-project-two" target="_blank">Check it
+                                    out on
+                                    GitHub</a>
+                                <a href="https://mo-mar.github.io/mohamed-omar-project-two/" target="_blank">View live
+                                    site</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="game-night-example">
+                    <div class="game-night-example recent-work-container">
+                        <div class="recent-work-box">
+                            <h3>Game Night!</h3>
+                            <p>A randomly generated trivia generator. Built with fellow talented developers <a
+                                    href="https://twitter.com/class_AnaTheDev" target="_blank"> Ana Morales</a> and
+                                <a href="https://twitter.com/nickchug" target="_blank">Nicholas Chug.</a></p>
+                            <div class="screenshot-container">
+                                <a href="https://dream-team-triva.github.io/gameNight/" target="_blank"><img
+                                        src="images/game-night-screenshot.png"
+                                        alt="A screengrab of a web app called Game Night, built by Mohamed Omar, Ana Morales and Nicholas Chug."></a>
+                            </div>
+                        </div>
+                        <div class="recent-work-info">
+                            <ul>
+                                <li><i class="fab fa-html5"></i></li>
+                                <li><i class="fab fa-css3-alt"></i></li>
+                                <li><i class="fab fa-sass"></i></li>
+                                <li><i class="fab fa-js-square"></i></li>
+                                <li><i class="devicon-jquery-plain"></i></li>
+                            </ul>
+                            <div class="recent-work-links">
+                                <a href="https://github.com/Dream-Team-Triva/gameNight" target="_blank">Check it out on
+                                    GitHub</a>
+                                <a href="https://dream-team-triva.github.io/gameNight/" target="_blank">View live
+                                    site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="whos-my-rep-example recent-work-container">
+                        <div class="recent-work-box">
+                            <h3>Who's My Rep?</h3>
+                            <p>A single-page app that connects Canadians with their municipal, provincial and federal political representatives. All data pulled in from the Open North API.</p>
+                            <div class="screenshot-container">
+                                <a href="https://mo-mar.github.io/mohamedOmarProjectFive/" target="_blank"><img src="images/whos-my-rep-screenshot.png" alt="A screengrab of a web app called Who's My Rep?, built by Mohamed Omar."></a>
+                            </div>
+                        </div>
+                        <div class="recent-work-info">
+                            <ul>
+                                <li><i class="fab fa-html5"></i></li>
+                                <li><i class="fab fa-css3-alt"></i></li>
+                                <li><i class="fab fa-sass"></i></li>
+                                <li><i class="fab fa-js-square"></i></li>
+                                <li><i class="fab fa-react"></i></li>  
+                            </ul>
+                            <div class="recent-work-links">
+                                <a href="https://github.com/mo-mar/mohamedOmarProjectFive" target="_blank">Check it out on
+                                    GitHub</a>
+                                <a href="https://mo-mar.github.io/mohamedOmarProjectFive/" target="_blank">View live
+                                    site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bitter-parent-example recent-work-container">
+                        <div class="recent-work-box">
+                            <h3>Bitter Parent</h3>
+                            <p>A single-page app that takes in a dessert the user wants to eat and suggests an alternative with less sugar. Users can also save their results. All data pulled in from the Nutritionix API. Built with fellow talented developers Jessica Chin and Sebastian Freeman.</p>
+                            <div class="screenshot-container">
+                                <a href="https://github.com/marchinfree/bitter-parent" target="_blank"><img
+                                src="images/bitter-parent-screenshot.png"
+                                alt="A screengrab of a web app called Bitter Parent, built by Mohamed Omar, Jessica Chin and Sebastian Freeman."></a>
+                            </div>
+                        </div>
+                        <div class="recent-work-info">
+                            <ul>
+                                <li><i class="fab fa-html5"></i></li>
+                                <li><i class="fab fa-css3-alt"></i></li>
+                                <li><i class="fab fa-sass"></i></li>
+                                <li><i class="fab fa-js-square"></i></li>
+                                <li><i class="fab fa-react"></i></li>
+                                <li class="skill-icon-container">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 172 172"
+                                        style=" fill:#000000;">
+                                        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+                                            stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                            font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                            <path d="M0,172v-172h172v172z" fill="none"></path>
+                                            <g>
+                                                <path
+                                                    d="M28.66667,132.58333l54.5885,-102.35433c1.15025,-2.15717 4.26058,-2.11775 5.3535,0.07167l18.89133,37.78267z"
+                                                    fill="#cccccc"></path>
+                                                <path
+                                                    d="M28.66667,132.55467l19.87317,-122.54642c0.51958,-3.20708 4.82675,-3.90225 6.33175,-1.02125l38.29508,73.401z"
+                                                    fill="#cccccc"></path>
+                                                <path d="M28.69533,132.53317l0.71667,-0.56258l62.81225,-51.38858l-17.716,-33.95567z" fill="#666666">
+                                                </path>
+                                                <path
+                                                    d="M28.66667,132.58333l95.55317,-92.13825c2.00308,-1.93142 5.34633,-0.79192 5.75483,1.96008l13.35867,90.17817l-53.75,31.32908c-2.18225,1.2255 -4.84467,1.2255 -7.02692,0z"
+                                                    fill="#cccccc"></path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </li>
+                            </ul>
+                            <div class="recent-work-links">
+                                <a href="https://github.com/marchinfree/bitter-parent" target="_blank">Check it out on
+                                    GitHub</a>
+                                <a href="https://bitter-parent.firebaseapp.com" target="_blank">View live
+                                    site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-example recent-work-container">
 
                     </div>
-                    <div class="whos-my-rep-example">
 
-                    </div>
-                    <div class="bitter-parent-example">
-
-                    </div>
-                    <div class="featured-example">
-
-                    </div>
                 </div>
-            </div>
         </section>
         <!-- this is the closing div for the wrapper -->
         </div>
