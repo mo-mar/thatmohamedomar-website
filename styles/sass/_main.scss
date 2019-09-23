@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 7.5rem;
+    margin-top: 8.5rem;
     h2{
         font-size: 4rem;
         margin: 0;
@@ -69,6 +69,8 @@
 
 .recent-work{
     margin-top: 5rem;
+    padding-top: 6rem;
+    background: $section-color1;
     h2{
         text-align: center;
         margin: 0;
@@ -86,7 +88,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: $section-color1;
         width: 100%;
 }
 
@@ -128,20 +129,39 @@
 
 .recent-work-links a{
     font-size: 2.5rem;
-    display: block;
-    border: 2px solid tomato;
     margin-bottom: 1rem;
-    width: 100%;
+    border: 2px solid #a6a3ce;
+    color: black;
+    padding: 3rem;
+    text-align: center;
+    display: inline-block;
 }
 
-// .recent-work-container, .under-the-sea-example{
-//     display: none;
-// }
+.recent-work-links a:hover{
+    background: blue;
+    color: white;
 
-// .reveal-example{
-//     display: block;
-// }
+}
 
-// .hide-example{
-//     display: none;
-// }
+
+// recent work section styles end
+
+// contact section styles begin
+
+.contact-box-flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-box{
+    border-radius: 10%;
+    // background: tomato;
+    flex: 1 0 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h4{
+        margin: 0;
+    }
+}

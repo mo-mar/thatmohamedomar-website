@@ -213,7 +213,7 @@ ul {
 header {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.85))), url("../images/hero-background.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.85)), url("../images/hero-background.jpg");
-  height: 85vh;
+  height: 90vh;
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
@@ -237,7 +237,14 @@ nav {
           justify-content: flex-end;
   padding-top: 2rem;
   height: 10vh;
-  background: rebeccapurple;
+  width: 100%;
+  position: relative;
+}
+
+.hamburger-toggle {
+  position: absolute;
+  top: 50%;
+  right: 0;
 }
 
 .hamburger-menu {
@@ -246,6 +253,11 @@ nav {
   margin: 0;
   -webkit-transition: 1s all;
   transition: 1s all;
+  background: #A6A3CE;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .hamburger-menu li {
@@ -300,7 +312,7 @@ header h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 5rem;
+  padding-top: 2rem;
 }
 
 .profile-picture {
@@ -331,8 +343,8 @@ header h2 {
 
 @-webkit-keyframes slide-in-right {
   0% {
-    -webkit-transform: translateX(1000px);
-    transform: translateX(1000px);
+    -webkit-transform: translateX(100rem);
+    transform: translateX(100rem);
     opacity: 0;
   }
   100% {
@@ -344,8 +356,8 @@ header h2 {
 
 @keyframes slide-in-right {
   0% {
-    -webkit-transform: translateX(1000px);
-    transform: translateX(1000px);
+    -webkit-transform: translateX(100rem);
+    transform: translateX(100rem);
     opacity: 0;
   }
   100% {
@@ -369,7 +381,7 @@ header h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 7.5rem;
+  margin-top: 8.5rem;
 }
 
 .about-me h2 {
@@ -448,6 +460,8 @@ header h2 {
 
 .recent-work {
   margin-top: 5rem;
+  padding-top: 6rem;
+  background: #f0f2f7;
 }
 
 .recent-work h2 {
@@ -479,7 +493,6 @@ header h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #f0f2f7;
   width: 100%;
 }
 
@@ -540,14 +553,55 @@ header h2 {
 
 .recent-work-links a {
   font-size: 2.5rem;
-  display: block;
-  border: 2px solid tomato;
   margin-bottom: 1rem;
-  width: 100%;
+  border: 2px solid #a6a3ce;
+  color: black;
+  padding: 3rem;
+  text-align: center;
+  display: inline-block;
+}
+
+.recent-work-links a:hover {
+  background: blue;
+  color: white;
+}
+
+.contact-box-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contact-box {
+  border-radius: 10%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 45%;
+          flex: 1 0 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-box h4 {
+  margin: 0;
 }
 
 footer {
   text-align: center;
+  margin-top: 5rem;
+  background: #f0f2f7;
 }
 
 footer p {

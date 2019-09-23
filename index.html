@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Raleway:400,700&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/89c69c428a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet"
         href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <title>Mohamed Omar || Front-end developer</title>
@@ -36,9 +37,10 @@
                 <ul class="header-icon-list">
                     <li><a href="https://twitter.com/ThatMohamedOmar" target="_blank"><i class="fab fa-twitter"></i></a>
                     </li>
-                    <li><a href="https://www.linkedin.com/in/mohamedomar2/" target="_blank"><i
-                                class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="https://github.com/mo-mar" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/mohamedomar2/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                    <li><a href="https://github.com/mo-mar" target="_blank"><i class="fab fa-github"></i></a>
+                    </li>
                 </ul>
                 <div class="profile-picture">
                     <img src="images/mohamed-omar-headshot.jpg"
@@ -50,15 +52,16 @@
     <main>
         <div class="wrapper">
             <section class="about-me">
-                <h2>Hello!</h2>
+                <h2>Hello! I'm Mo</h2>
                 <hr>
-                <p>I'm Mo, a front-end developer based in Toronto. I get a massive kick out of building useful and
+                <p>I'm a front-end developer based in Toronto. I get a massive kick out of building useful and
                     good-looking online experiences. I have a background in journalism and online content creation,
                     which has been a boon to my transition to web development. Outside of code I'm a big photography and
                     camera nerd, a Radiohead fan and always on the hunt for good tacos.</p>
                 <p>You can find some of my work below, but feel free to email me or reach out on Twitter or LinkedIn!
                 </p>
             </section>
+        <!-- this is the closing div for the wrapper -->
         </div>
         <section class="skills">
             <div class="wrapper">
@@ -116,12 +119,14 @@
                         <i class="fab fa-github"></i>Github
                     </li>
                 </ul>
+            <!-- this is the closing div for the wrapper -->
+            </div>
         </section>
         <section class="recent-work">
             <div class="wrapper">
                 <h2>Recent work</h2>
                 <hr>
-                <div class="recent-work-nav">
+                <!-- <div class="recent-work-nav">
                     <ul>
                         <li>
                             <label for="under-the-sea"></label>
@@ -140,9 +145,9 @@
                             <button id="bitter-parent">Bitter Parent</button>
                         </li>
                     </ul>
-                </div>
-                <div class="recent-work-master">
-                    <div class="under-the-sea-example recent-work-container">
+                </div> -->
+                <div class="recent-work-master main-carousel">
+                    <div class="carousel-cell under-the-sea-example recent-work-container">
                         <div class="recent-work-box">
                             <h3>Under the Sea</h3>
                             <p>A multi-page PSD conversion. It's responsive, accessible and has a lot of fish. What
@@ -173,8 +178,8 @@
                         <div class="recent-work-box">
                             <h3>Game Night!</h3>
                             <p>A randomly generated trivia generator. Built with fellow talented developers <a
-                                    href="https://twitter.com/class_AnaTheDev" target="_blank"> Ana Morales</a> and
-                                <a href="https://twitter.com/nickchug" target="_blank">Nicholas Chug.</a></p>
+                                    href="http://www.anamorales.dev" target="_blank"> Ana Morales</a> and
+                                <a href="http://www.nicholaschug.me" target="_blank">Nicholas Chug.</a></p>
                             <div class="screenshot-container">
                                 <a href="https://dream-team-triva.github.io/gameNight/" target="_blank"><img
                                         src="images/game-night-screenshot.png"
@@ -238,7 +243,7 @@
                                 <li><i class="fab fa-sass"></i></li>
                                 <li><i class="fab fa-js-square"></i></li>
                                 <li><i class="fab fa-react"></i></li>
-                                <li class="skill-icon-container">
+                                <li>
                                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 172 172"
                                         style=" fill:#000000;">
                                         <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
@@ -270,20 +275,47 @@
                             </div>
                         </div>
                     </div>
-                    <div class="featured-example recent-work-container">
-
-                    </div>
-
                 </div>
+                <!-- this is the closing div for the wrapper -->
+            </div>
         </section>
-        <!-- this is the closing div for the wrapper -->
-        </div>
+        <section class="contact-form">
+            <div class="wrapper">
+                <h2>Contact</h2>
+                <div class="contact-box-flex">
+                    <div class="contact-box">
+                        <!-- email -->
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <!-- <h4>Email</h4> -->
+                        <p>mohamedsomar1@gmail.com</p>
+                    </div>
+                        <!-- social -->
+                    <div class="contact-box">
+                        <h4>Social</h4>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                </div>
+                <form>
+                    <label for="user-name" class="visuallyhidden">Name:</label>
+                    <input type="text" for="user-name" placeholder="Name">
+                    <label for="user-email" class="visuallyhidden">Email:</label>
+                    <input id="user-email" type="email" placeholder="yourEmail@sweetEmailProvider.com">
+                    <label for="user-message" class="visuallyhidden">Type your message:</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </form>
+            </div>
+        </section>
     </main>
     <footer>
-        <p>&copy; 2019 Mohamed Omar</p>
+        <div class="wrapper">
+            <p>&copy; 2019 Mohamed Omar</p>
+            <p>Design by bigpsfan on Themeforest. Profile picture taken by Fatima Gueye.</p>
+        </div>
     </footer>
     <script src='https://code.jquery.com/jquery-3.4.0.min.js'
-        integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+    integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="script.js"></script>
 
 </html>

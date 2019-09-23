@@ -1,6 +1,6 @@
 header{
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.85)), url("../images/hero-background.jpg");
-    height: 85vh;
+    height: 90vh;
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
@@ -10,7 +10,6 @@ header{
 
 
 header i{
-    // background: tomato;
     border-radius: 50%;
     padding: 0.5rem;
     border: 2px solid;
@@ -22,7 +21,14 @@ nav{
     justify-content: flex-end;
     padding-top: 2rem;
     height: 10vh;
-    background: rebeccapurple;
+    width: 100%;
+    position: relative;
+}
+
+.hamburger-toggle{
+    position: absolute;
+    top: 50%;
+    right: 0;
 }
 
 .hamburger-menu{
@@ -30,6 +36,8 @@ nav{
     display: none;
     margin: 0;
     transition: 1s all;
+    background: #A6A3CE;
+    flex-direction: column;
     li{
         margin: 0 1rem;
         display: inline;
@@ -50,15 +58,6 @@ nav label{
 .reveal-menu{
     display: block;
 }
-
-// input.hamburger-menu:checked + .hamburger-menu{
-//     display: block;
-//     position: absolute;
-//     right: 10rem;
-//     top: 2rem;
-//     transition: 1s;
-//     z-index: 100;
-// }
 
 h1{
     font-family: $main-font;
@@ -84,7 +83,8 @@ header h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 5rem;
+    padding-top: 2rem;
+    
 }
 
 .profile-picture{
@@ -112,8 +112,8 @@ header h2{
 
 @-webkit-keyframes slide-in-right {
   0% {
-    -webkit-transform: translateX(1000px);
-            transform: translateX(1000px);
+    -webkit-transform: translateX(100rem);
+            transform: translateX(100rem);
     opacity: 0;
   }
   100% {
@@ -124,8 +124,8 @@ header h2{
 }
 @keyframes slide-in-right {
   0% {
-    -webkit-transform: translateX(1000px);
-            transform: translateX(1000px);
+    -webkit-transform: translateX(100rem);
+            transform: translateX(100rem);
     opacity: 0;
   }
   100% {
