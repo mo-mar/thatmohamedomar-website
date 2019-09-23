@@ -16,8 +16,18 @@ myApp.flickity = function(){
         // options
         cellAlign: 'left',
         contain: true,
-        autoPlay: 2500,
+        autoPlay: 3500,
+        wrapAround: true
     });
+}
+
+myApp.smoothScroll = function(){
+    $('nav li a').click(function(){
+        let targetLink = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(targetLink).offset().top
+        }, 1000);
+    })
 }
 
 myApp.revealHamburger = function(){
@@ -30,6 +40,8 @@ myApp.init = function(){
     myApp.revealWork();
     myApp.revealHamburger();
     myApp.flickity();
+    myApp.smoothScroll();
+    AOS.init();
 }
 
 $(document).ready(function(){

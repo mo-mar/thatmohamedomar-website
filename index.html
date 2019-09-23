@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Raleway:400,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Raleway:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/89c69c428a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <link rel="stylesheet"
-        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <title>Mohamed Omar || Front-end developer</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -22,26 +22,26 @@
                 <label for="hamburger">
                     <p class="visuallyhidden">Menu Toggle</p>&#9776;
                 </label>
-                <input type="checkbox" class="hamburger-toggle">
+                <input type="checkbox" class="hamburger-toggle" id="hamburger">
                 <ul class="hamburger-menu">
-                    <li><a href="#"></a>Home</li>
-                    <li><a href="#"></a>About</li>
-                    <li><a href="#"></a>Toolbox</li>
-                    <li><a href="#"></a>Recent work</li>
-                    <li><a href="#"></a>Contact</li>
+                    <li><a href="https://www.thatmohamedomar.com">Home</a></li>
+                    <li><a href="#about-me">About</a></li>
+                    <li><a href="#toolbox">Toolbox</a></li>
+                    <li><a href="#recent-work">Recent work</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="hero-center-flex">
                 <h1>Mohamed Omar</h1>
                 <h2>Front-end developer</h2>
-                <ul class="header-icon-list">
+                <!-- <ul class="header-icon-list">
                     <li><a href="https://twitter.com/ThatMohamedOmar" target="_blank"><i class="fab fa-twitter"></i></a>
                     </li>
                     <li><a href="https://www.linkedin.com/in/mohamedomar2/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     </li>
                     <li><a href="https://github.com/mo-mar" target="_blank"><i class="fab fa-github"></i></a>
                     </li>
-                </ul>
+                </ul> -->
                 <div class="profile-picture">
                     <img src="images/mohamed-omar-headshot.jpg"
                         alt="A photograph of Mohamed Omar, a front-end developer based in Toronto, Ontario.">
@@ -51,7 +51,7 @@
     </header>
     <main>
         <div class="wrapper">
-            <section class="about-me">
+            <section class="about-me" id="about-me">
                 <h2>Hello! I'm Mo</h2>
                 <hr>
                 <p>I'm a front-end developer based in Toronto. I get a massive kick out of building useful and
@@ -63,89 +63,10 @@
             </section>
         <!-- this is the closing div for the wrapper -->
         </div>
-        <section class="skills">
-            <div class="wrapper">
-                <h2>Toolbox</h2>
-                <hr>
-                <ul class="skills-icons">
-                    <li class="skill-icon-container">
-                        <i class="fab fa-html5"></i>
-                        <p>HTML5</p>
-                    </li>
-                    <li class="skill-icon-container">
-                        <i class="fab fa-css3-alt"></i>
-                        <p>CSS3</p>
-                    </li>
-                    <li class="skill-icon-container">
-                        <i class="fab fa-sass"></i>SASS
-                    </li>
-                    <li class="skill-icon-container">
-                        <i class="fab fa-js-square"></i>JavaScript
-                    </li>
-                    <li class="skill-icon-container">
-                        <i class="devicon-jquery-plain"></i>jQuery
-                    </li>
-                    <li class="skill-icon-container">
-                        <i class="fab fa-react"></i>React
-                    </li>
-                    <li class="skill-icon-container">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60"
-                            viewBox="0 0 172 172" style=" fill:#000000;">
-                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                                style="mix-blend-mode: normal">
-                                <path d="M0,172v-172h172v172z" fill="none"></path>
-                                <g>
-                                    <path
-                                        d="M28.66667,132.58333l54.5885,-102.35433c1.15025,-2.15717 4.26058,-2.11775 5.3535,0.07167l18.89133,37.78267z"
-                                        fill="#cccccc"></path>
-                                    <path
-                                        d="M28.66667,132.55467l19.87317,-122.54642c0.51958,-3.20708 4.82675,-3.90225 6.33175,-1.02125l38.29508,73.401z"
-                                        fill="#cccccc"></path>
-                                    <path d="M28.69533,132.53317l0.71667,-0.56258l62.81225,-51.38858l-17.716,-33.95567z"
-                                        fill="#666666"></path>
-                                    <path
-                                        d="M28.66667,132.58333l95.55317,-92.13825c2.00308,-1.93142 5.34633,-0.79192 5.75483,1.96008l13.35867,90.17817l-53.75,31.32908c-2.18225,1.2255 -4.84467,1.2255 -7.02692,0z"
-                                        fill="#cccccc"></path>
-                                </g>
-                            </g>
-                        </svg>Firebase
-                    </li>
-                    <li class="skill-icon-container">
-                        <i class="fab fa-git-alt"></i>Git
-                    </li>
-                    <li class="skill-icon-container">
-                        <i class="fab fa-github"></i>Github
-                    </li>
-                </ul>
-            <!-- this is the closing div for the wrapper -->
-            </div>
-        </section>
-        <section class="recent-work">
+        <section class="recent-work" id="recent-work">
             <div class="wrapper">
                 <h2>Recent work</h2>
                 <hr>
-                <!-- <div class="recent-work-nav">
-                    <ul>
-                        <li>
-                            <label for="under-the-sea"></label>
-                            <button id="under-the-sea">Under the Sea</button>
-                        </li>
-                        <li>
-                            <label for="game-night"></label>
-                            <button id="game-night">Game Night!</button>
-                        </li>
-                        <li>
-                            <label for="whos-my-rep"></label>
-                            <button id="whos-my-rep">Who's My Rep?</button>
-                        </li>
-                        <li>
-                            <label for="bitter-parent"></label>
-                            <button id="bitter-parent">Bitter Parent</button>
-                        </li>
-                    </ul>
-                </div> -->
                 <div class="recent-work-master main-carousel">
                     <div class="carousel-cell under-the-sea-example recent-work-container">
                         <div class="recent-work-box">
@@ -279,30 +200,99 @@
                 <!-- this is the closing div for the wrapper -->
             </div>
         </section>
-        <section class="contact-form">
+        <section class="skills" id="toolbox">
+            <div class="wrapper">
+                <h2>Toolbox</h2>
+                <hr>
+                <ul class="skills-icons">
+                    <li class="skill-icon-container">
+                        <i class="fab fa-html5"></i>
+                        <p>HTML5</p>
+                    </li>
+                    <li class="skill-icon-container">
+                        <i class="fab fa-css3-alt"></i>
+                        <p>CSS3</p>
+                    </li>
+                    <li class="skill-icon-container">
+                        <i class="fab fa-sass"></i>SASS
+                    </li>
+                    <li class="skill-icon-container">
+                        <i class="fab fa-js-square"></i>JavaScript
+                    </li>
+                    <li class="skill-icon-container">
+                        <i class="devicon-jquery-plain"></i>jQuery
+                    </li>
+                    <li class="skill-icon-container">
+                        <i class="fab fa-react"></i>React
+                    </li>
+                    <li class="skill-icon-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60" viewBox="0 0 172 172"
+                            style=" fill:#000000;">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                <g>
+                                    <path
+                                        d="M28.66667,132.58333l54.5885,-102.35433c1.15025,-2.15717 4.26058,-2.11775 5.3535,0.07167l18.89133,37.78267z"
+                                        fill="#cccccc"></path>
+                                    <path
+                                        d="M28.66667,132.55467l19.87317,-122.54642c0.51958,-3.20708 4.82675,-3.90225 6.33175,-1.02125l38.29508,73.401z"
+                                        fill="#cccccc"></path>
+                                    <path d="M28.69533,132.53317l0.71667,-0.56258l62.81225,-51.38858l-17.716,-33.95567z"
+                                        fill="#666666"></path>
+                                    <path
+                                        d="M28.66667,132.58333l95.55317,-92.13825c2.00308,-1.93142 5.34633,-0.79192 5.75483,1.96008l13.35867,90.17817l-53.75,31.32908c-2.18225,1.2255 -4.84467,1.2255 -7.02692,0z"
+                                        fill="#cccccc"></path>
+                                </g>
+                            </g>
+                        </svg>Firebase
+                    </li>
+                    <li class="skill-icon-container">
+                        <i class="fab fa-git-alt"></i>Git
+                    </li>
+                    <li class="skill-icon-container">
+                        <i class="fab fa-github"></i>Github
+                    </li>
+                </ul>
+                <!-- this is the closing div for the wrapper -->
+            </div>
+        </section>
+        <section class="contact-form" id="contact">
             <div class="wrapper">
                 <h2>Contact</h2>
+                <hr>
                 <div class="contact-box-flex">
                     <div class="contact-box">
                         <!-- email -->
                         <i class="fas fa-envelope" aria-hidden="true"></i>
-                        <!-- <h4>Email</h4> -->
-                        <p>mohamedsomar1@gmail.com</p>
+                        <p>hello@thatmohamedomar.com</p>
                     </div>
                         <!-- social -->
                     <div class="contact-box">
-                        <h4>Social</h4>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-linkedin-in"></i>
+                        <ul class="footer-icon-list">
+                            <li>
+                                <a href="https://twitter.com/ThatMohamedOmar" target="_blank"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li><a href="https://www.linkedin.com/in/mohamedomar2/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li><a href="https://github.com/mo-mar" target="_blank"><i class="fab fa-github"></i></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <form>
-                    <label for="user-name" class="visuallyhidden">Name:</label>
-                    <input type="text" for="user-name" placeholder="Name">
-                    <label for="user-email" class="visuallyhidden">Email:</label>
-                    <input id="user-email" type="email" placeholder="yourEmail@sweetEmailProvider.com">
+                <form action="https://formspree.io/hello@thatmohamedomar.com" method="POST">
+                    <div class="name-email-box">
+                        <label for="user-name" class="visuallyhidden">Name:</label>
+                        <input type="text" for="user-name" placeholder="Name" required name="name">
+                        <label for="user-email" class="visuallyhidden">Email:</label>
+                        <input id="user-email" type="email" placeholder="Your email" required name="email">
+                    </div>
                     <label for="user-message" class="visuallyhidden">Type your message:</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <textarea id="user-message" cols="30" rows="10" placeholder="Your message" required name="message" maxlength="500"></textarea>
+                    <label for="submit-form"></label>
+                    <button type="submit">Submit</button>
                 </form>
             </div>
         </section>
@@ -310,12 +300,14 @@
     <footer>
         <div class="wrapper">
             <p>&copy; 2019 Mohamed Omar</p>
-            <p>Design by bigpsfan on Themeforest. Profile picture taken by Fatima Gueye.</p>
+            <p class="credit">Design by bigpsfan on Themeforest. Profile picture taken by Fatima Gueye.</p>
         </div>
     </footer>
     <script src='https://code.jquery.com/jquery-3.4.0.min.js'
     integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
-
+</body>
 </html>

@@ -1,6 +1,7 @@
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 .wrapper{
@@ -24,10 +25,17 @@ h1, h2, h3, h4{
 
 hr{
     width: 5%;
+    height: 0.4rem;
+    background: rgb(125, 119, 211);
 }
 
 ul{
     list-style-type: none;
+}
+
+input:focus{
+    border: 3px dotted tomato;
+    background: $special-purple;
 }
 
 .visuallyhidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}

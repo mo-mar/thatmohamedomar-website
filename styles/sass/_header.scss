@@ -1,11 +1,20 @@
 header{
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.85)), url("../images/hero-background.jpg");
+    background: linear-gradient(rgba(75, 66, 122, 1), rgba(0, 0, 0, 0.7)), url("../images/hero-background.jpg");
     height: 90vh;
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
     width: 100%;
     position: relative;
+    @include smallLaptop{
+        height: 60vh;
+    }
+    @include ipad{
+        height: 60vh;
+    }
+    @include iphonePlus{
+        height: 90vh;
+    }
 }
 
 
@@ -14,13 +23,16 @@ header i{
     padding: 0.5rem;
     border: 2px solid;
     color: white;
+    @include iphonePlus{
+        font-size: 3rem;
+    }
 }
 
 nav{
     display: flex;
     justify-content: flex-end;
     padding-top: 2rem;
-    height: 10vh;
+    // height: 10vh;
     width: 100%;
     position: relative;
 }
@@ -33,15 +45,12 @@ nav{
 
 .hamburger-menu{
     list-style: none;
-    display: none;
+    display: flex;
+    flex-direction: column;
     margin: 0;
     transition: 1s all;
     background: #A6A3CE;
-    flex-direction: column;
-    li{
-        margin: 0 1rem;
-        display: inline;
-    }
+    
 }
 
 nav label{
@@ -61,11 +70,15 @@ nav label{
 
 h1{
     font-family: $main-font;
-    font-size: 5.5rem;
+    font-size: 7.5rem;
     font-weight: 700;
     color: white;
     text-transform: uppercase;
-    margin: 0 0 1.5rem 0;
+    margin: 0 0 3.5rem 0;
+    text-align: center;
+    @include ipad{
+        font-size: 6.5rem;
+    }
 }
 
 header h2{
@@ -75,6 +88,11 @@ header h2{
     text-transform: uppercase;
     margin: 0;
     margin: 0 0 2.5rem 0;
+    font-size: 3.5rem;
+    text-align: center;
+    @include ipad{
+        font-size: 3.5rem;
+    }
 }
 
 
@@ -89,13 +107,20 @@ header h2{
 
 .profile-picture{
     width: 25%;
-    animation: slide-in-right 1s forwards;
     position: absolute;
     bottom: -8rem;
+    animation: rotate-diagonal-1 1s forwards;
     img{
         border-radius: 50%;
         width: 100%;
         border: 10px solid whitesmoke;
+    }
+    @include smallLaptop{
+        width: 30%;
+    }
+    @include ipad{
+        bottom: -8rem;
+        width: 40%;
     }
 }
 
@@ -108,7 +133,7 @@ header h2{
     }
 }
 
-// animation courtesy Animista.net
+// animations courtesy Animista.net
 
 @-webkit-keyframes slide-in-right {
   0% {
@@ -134,4 +159,31 @@ header h2{
     opacity: 1;
   }
 }
-
+@-webkit-keyframes rotate-diagonal-1 {
+  0% {
+    -webkit-transform: rotate3d(1, 1, 0, 0deg);
+            transform: rotate3d(1, 1, 0, 0deg);
+  }
+  50% {
+    -webkit-transform: rotate3d(1, 1, 0, -180deg);
+            transform: rotate3d(1, 1, 0, -180deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(1, 1, 0, -360deg);
+            transform: rotate3d(1, 1, 0, -360deg);
+  }
+}
+@keyframes rotate-diagonal-1 {
+  0% {
+    -webkit-transform: rotate3d(1, 1, 0, 0deg);
+            transform: rotate3d(1, 1, 0, 0deg);
+  }
+  50% {
+    -webkit-transform: rotate3d(1, 1, 0, -180deg);
+            transform: rotate3d(1, 1, 0, -180deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(1, 1, 0, -360deg);
+            transform: rotate3d(1, 1, 0, -360deg);
+  }
+}
