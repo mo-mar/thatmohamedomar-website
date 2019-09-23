@@ -19,7 +19,7 @@ h2{
     p{
         width: 50%;
         margin-top: 2rem;
-        line-height: 2.7rem;
+        line-height: 3rem;
         @include smallLaptop{
             width: 70%;
         }
@@ -114,6 +114,7 @@ h2{
         justify-content: center;
         align-items: center;
         width: 100%;
+        margin-top: 3rem;
 }
 
 .recent-work-box{
@@ -160,6 +161,9 @@ h2{
     @include ipad{
         width: 70%;
     }
+    @include iphonePlus{
+        width: 90%;
+    }
 }
 
 .recent-work-links a{
@@ -171,6 +175,11 @@ h2{
     padding: 3rem;
     text-align: center;
     display: inline-block;
+    @include iphonePlus{
+        width: 80%;
+        margin: 1.5rem auto;
+        display: block;
+    }
 }
 
 .recent-work-links a:hover{
@@ -200,12 +209,13 @@ form{
     padding: 5rem;
     // width: 90%;
     textarea{
-        width: 100%;
-        margin-top: 2rem;
+        width: 70%;
+        display: block;
+        margin: 2rem auto;
         resize: none;
-    }
-    input{
-        width: 45%;
+        @include iphonePlus{
+            width: 100%;
+        }
     }
     button{
         width: 15rem;
@@ -218,12 +228,38 @@ form{
     button:hover{
         background: tomato;
     }
+    @include ipad{
+        display: flex;
+        flex-direction: column;
+    }
+    @include iphonePlus{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 
 .name-email-box{
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
+    width: 70%;
+    @include ipad{
+        flex-direction: column;
+    }
+    @include iphonePlus{
+        flex-direction: column;
+        width: 100%;
+    }
+    input{
+        @include ipad{
+            margin: 1rem 0;
+        }
+        @include iphonePlus{
+            margin: 1rem 0;
+            width: 100%;
+        }
+    }
 }
 
 .contact-box-flex{
@@ -242,6 +278,9 @@ form{
         margin: 0;
         // padding-bottom: 0.5rem;
     }
+    @include iphonePlus{
+        flex-direction: column;
+    }
 }
 
 .contact-box{
@@ -253,6 +292,12 @@ form{
     justify-content: center;
     align-items: center;
     margin: 2rem 0;
+    @include iphone5{
+        flex-direction: column;
+        p{
+            margin-top: 0.8rem;
+        }
+    }
 }
 
 

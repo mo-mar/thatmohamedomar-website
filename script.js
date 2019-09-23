@@ -32,8 +32,7 @@ myApp.smoothScroll = function(){
 
 myApp.revealHamburger = function(){
     $('nav label').on('click touch', function(){
-        // $(".hamburger-toggle").hide();
-        $('.hamburger-menu').toggleClass("reveal-menu");
+        $('.hamburger-menu').toggleClass("hide-menu");
     })
 }
 myApp.init = function(){
