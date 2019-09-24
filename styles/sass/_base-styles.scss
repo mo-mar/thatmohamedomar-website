@@ -25,6 +25,10 @@ a{
     text-decoration: none;
 }
 
+a:visited{
+    color: teal;
+}
+
 h1, h2, h3, h4{
     font-family: $main-font;
 }
@@ -41,6 +45,35 @@ ul{
 
 input:focus{
     border: 3px dotted tomato;
+    background: $special-purple;
+
+}
+
+input:focus::placeholder{
+     color: white;
+}
+
+ 
+::placeholder{
+     color: teal;
+}
+
+textarea:focus{
+     border: 3px dotted tomato;
+    background: $special-purple;
+}
+
+textarea:focus::placeholder{
+    color: white;
+}
+
+button:focus{
+    background: teal;
+    color: white;
+}
+
+.footer-icon-list li:focus{
+    color: teal;
     background: $special-purple;
 }
 

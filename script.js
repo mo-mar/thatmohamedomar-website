@@ -16,7 +16,6 @@ myApp.flickity = function(){
         // options
         cellAlign: 'left',
         contain: true,
-        autoPlay: 3500,
         wrapAround: true
     });
 }
@@ -27,6 +26,7 @@ myApp.smoothScroll = function(){
         $('html, body').animate({
             scrollTop: $(targetLink).offset().top
         }, 1000);
+        $('.hamburger-menu').toggleClass("hide-menu");
     })
 }
 
