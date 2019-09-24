@@ -55,7 +55,6 @@ h2{
         display: block;
         font-size: 5.8rem;
         margin-bottom: 1.5rem;
-        animation: heartbeat 1s infinite;
         @include ipad{
             margin-top: 1.5rem;
         }
@@ -71,6 +70,12 @@ h2{
          @include ipad{
             margin-top: 1.5rem;
         }
+    }
+    i:hover{
+        animation: wobble-hor-bottom 1s;
+    }
+    svg:hover{
+        animation: wobble-hor-bottom 1s;
     }
 }
 
@@ -216,6 +221,7 @@ form{
         width: 70%;
         display: block;
         margin: 2rem auto;
+        padding: 0.8rem;
         resize: none;
         @include iphonePlus{
             width: 100%;
@@ -228,6 +234,11 @@ form{
         margin: 0 auto;
         display: block;
         margin-top: 2rem;
+        @include iphone678{
+            -webkit-appearance: none;
+            background: lightblue;
+            color: black;
+        }
     }
     button:hover{
         background: tomato;
@@ -246,6 +257,7 @@ form{
 .name-email-box{
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     margin: 0 auto;
     width: 70%;
     @include ipad{
@@ -256,6 +268,7 @@ form{
         width: 100%;
     }
     input{
+        padding: 0.5rem;
         @include ipad{
             margin: 1rem 0;
         }
@@ -263,6 +276,10 @@ form{
             margin: 1rem 0;
             width: 100%;
         }
+    }
+    input[type="email"]{
+        margin-top: 1.5rem;
+        margin-bottom: 0;
     }
 }
 
@@ -319,82 +336,14 @@ form{
         border: 2px solid white;
         border-radius: 50%;
         padding: 0.8rem;
-        
+        animation: none;
     }
     i:hover{
-        animation: heartbeat 1s forwards;
+        color: rgb(20, 182, 182);
     }
 }
 
 // Animation courtesy of Animista.net
-@-webkit-keyframes heartbeat {
-  from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transform-origin: center center;
-            transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  10% {
-    -webkit-transform: scale(0.91);
-            transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  17% {
-    -webkit-transform: scale(0.98);
-            transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  33% {
-    -webkit-transform: scale(0.87);
-            transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  45% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-}
-@keyframes heartbeat {
-  from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transform-origin: center center;
-            transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  10% {
-    -webkit-transform: scale(0.91);
-            transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  17% {
-    -webkit-transform: scale(0.98);
-            transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  33% {
-    -webkit-transform: scale(0.87);
-            transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  45% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-}
 
 @-webkit-keyframes shake-horizontal {
   0%,
@@ -450,5 +399,63 @@ form{
   90% {
     -webkit-transform: translateX(-8px);
             transform: translateX(-8px);
+  }
+}
+@-webkit-keyframes wobble-hor-bottom {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+            transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+            transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+            transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+            transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+            transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+@keyframes wobble-hor-bottom {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+            transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+            transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+            transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+            transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+            transform: translateX(-6px) rotate(-1.2deg);
   }
 }

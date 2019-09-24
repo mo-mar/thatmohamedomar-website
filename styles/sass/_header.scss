@@ -39,7 +39,7 @@ header{
     flex-wrap: wrap;
     margin: 0 auto;
     // filter: opacity(0.8);
-    transition: 1s all;
+    transition: all 1s;
     background: #A6A3CE;
     // width: 50%;
     // height: 60vh;
@@ -85,6 +85,9 @@ header{
             margin: 1rem;
         }
     }
+    @include iphone678{
+        height: 50vh;
+    }
     @include iphone5{
         height: 50vh;
     }
@@ -92,6 +95,7 @@ header{
 
 .hide-menu{
     display: none;
+    transition: all 1s;
 }
 
 nav{
@@ -303,3 +307,37 @@ header h2{
     opacity: 1;
   }
 }
+
+@-webkit-keyframes swing-out-top-bck {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotateX(-100deg);
+            transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 0;
+  }
+}
+@keyframes swing-out-top-bck {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotateX(-100deg);
+            transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 0;
+  }
+}
+

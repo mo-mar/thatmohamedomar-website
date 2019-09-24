@@ -5,8 +5,12 @@ footer{
     p{
         margin: 0;
     }
+    
 }
 
 .credit{
     margin-top: 2rem;
+    @include iphonePlus{
+        font-size: 1.8rem;
+    }
 }
