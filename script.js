@@ -16,7 +16,7 @@ myApp.smoothScroll = function(){
         let targetLink = $(this).attr('href');
         $('html, body').animate({
             scrollTop: $(targetLink).offset().top
-        }, 1000);
+        }, 0);
         $('.hamburger-menu').toggleClass("hide-menu");
     })
 }
